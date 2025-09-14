@@ -64,6 +64,9 @@ mvn archetype:generate \
 ![VS Code Remote](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-14%20at%2012.17.14%E2%80%AFAM.png)
 ### 5️⃣ Connect VS Code to EC2
 - Installed **Remote - SSH** extension.
+
+### 4️⃣ VS Code Remote SSH
+![SSH Config](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-14%20at%2012.35.56%E2%80%AFAM.png)
 - Added SSH config:
   ```txt
   Host ec2-3-6-94-23.ap-south-1.compute.amazonaws.com
@@ -76,6 +79,8 @@ mvn archetype:generate \
   /home/ec2-user/nextwork-web-project
   ```
 
+### 5️⃣ Updated index.jsp
+![index.jsp Output](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-14%20at%2012.36.03%E2%80%AFAM.png)
 ### 6️⃣ Edit Web App
 - Updated `index.jsp` with:
   ```html
@@ -91,7 +96,7 @@ mvn archetype:generate \
 
 ## 📸 Screenshots  
 
-Screenshots of the setup and steps are stored in the [`/screenshots`](./screenshots) folder:
+Screenshots of the setup and steps are stored in the [`/screenshots`](https://github.com/singhharsh77/aws-webapp-devops/tree/main/Screenshorts) folder:
 
 - ✅ EC2 instance running  
 - ✅ SSH connection  
