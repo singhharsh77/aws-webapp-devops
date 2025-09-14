@@ -27,6 +27,8 @@ The goal was to set up a **CI/CD-ready environment** in the cloud, automate the 
   ```bash
   ssh -i ~/Desktop/DevOps/work-keypair.pem ec2-user@<public-dns>
   ```
+  ### 2️⃣ SSH Connection
+![SSH Connected](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-13%20at%2011.54.36%E2%80%AFPM.png)
 
 ### 3️⃣ Install Dependencies
 - Installed **Maven**:
@@ -37,7 +39,8 @@ The goal was to set up a **CI/CD-ready environment** in the cloud, automate the 
   source ~/.bashrc
   ```
 ### 3️⃣ Maven Build Success
-![Maven Build](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-14%20at%2012.17.14%E2%80%AFAM.png?raw=true)
+![Maven Build](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-14%20at%2012.12.07%E2%80%AFAM.png)
+
 
 - Installed **Java 8 (Amazon Corretto)**:
   ```bash
@@ -56,6 +59,9 @@ mvn archetype:generate \
 ```
 - Verified with `BUILD SUCCESS`.
 
+
+### 4️⃣ VS Code Remote SSH
+![VS Code Remote](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-14%20at%2012.17.14%E2%80%AFAM.png)
 ### 5️⃣ Connect VS Code to EC2
 - Installed **Remote - SSH** extension.
 - Added SSH config:
