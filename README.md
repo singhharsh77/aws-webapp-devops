@@ -36,11 +36,9 @@ The goal was to set up a **CI/CD-ready environment** in the cloud, automate the 
   echo "export PATH=/opt/apache-maven-3.5.2/bin:$PATH" >> ~/.bashrc
   source ~/.bashrc
   ```
+### 3️⃣ Maven Build Success
+![Maven Build](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-14%20at%2012.17.14%E2%80%AFAM.png?raw=true)
 
-(https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-13%20at%2011.54.36%E2%80%AFPM.png
-  )
-
-(
 - Installed **Java 8 (Amazon Corretto)**:
   ```bash
   sudo dnf install -y java-1.8.0-amazon-corretto-devel
