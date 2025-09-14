@@ -8,11 +8,11 @@ The goal was to set up a **CI/CD-ready environment** in the cloud, automate the 
 
 ## 🔧 Project Steps
 
-### 1️⃣ AWS IAM User Setup
+### 1️ AWS IAM User Setup
 - Created an IAM user `Harsh-IAM-Admin` with **AdministratorAccess**.
 - Downloaded credentials (.csv) and used this user instead of root for security.
 
-### 2️⃣ EC2 Instance Launch
+### 2️ EC2 Instance Launch
 ### EC2 Instance Running![Screenshorts/Screenshot 2025-09-13 at 11.55.10 PM.png](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-13%20at%2011.55.10%E2%80%AFPM.png)
 
 - Region: `ap-south-1 (Mumbai)`
@@ -27,10 +27,10 @@ The goal was to set up a **CI/CD-ready environment** in the cloud, automate the 
   ```bash
   ssh -i ~/Desktop/DevOps/work-keypair.pem ec2-user@<public-dns>
   ```
-  ### 2️⃣ SSH Connection
+  ### 3 SSH Connection
 ![SSH Connected](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-13%20at%2011.54.36%E2%80%AFPM.png)
 
-### 3️⃣ Install Dependencies
+### 4 Install Dependencies
 - Installed **Maven**:
   ```bash
   wget https://archive.apache.org/dist/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.tar.gz
@@ -38,7 +38,7 @@ The goal was to set up a **CI/CD-ready environment** in the cloud, automate the 
   echo "export PATH=/opt/apache-maven-3.5.2/bin:$PATH" >> ~/.bashrc
   source ~/.bashrc
   ```
-### 3️⃣ Maven Build Success
+### 5 Maven Build Success
 ![Maven Build](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-14%20at%2012.12.07%E2%80%AFAM.png)
 
 
@@ -49,7 +49,7 @@ The goal was to set up a **CI/CD-ready environment** in the cloud, automate the 
   export PATH=$JAVA_HOME/jre/bin:$PATH
   ```
 
-### 4️⃣ Generate Web App with Maven
+### 6 Generate Web App with Maven
 ```bash
 mvn archetype:generate \
     -DgroupId=com.nextwork.app \
@@ -60,12 +60,12 @@ mvn archetype:generate \
 - Verified with `BUILD SUCCESS`.
 
 
-### 4️⃣ VS Code Remote SSH
+### 7 VS Code Remote SSH
 ![VS Code Remote](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-14%20at%2012.17.14%E2%80%AFAM.png)
-### 5️⃣ Connect VS Code to EC2
+### 8 Connect VS Code to EC2
 - Installed **Remote - SSH** extension.
 
-### 4️⃣ VS Code Remote SSH
+### 9 VS Code Remote SSH
 ![SSH Config](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-14%20at%2012.35.56%E2%80%AFAM.png)
 - Added SSH config:
   ```txt
@@ -79,9 +79,9 @@ mvn archetype:generate \
   /home/ec2-user/nextwork-web-project
   ```
 
-### 5️⃣ Updated index.jsp
+### 10 Updated index.jsp
 ![index.jsp Output](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-14%20at%2012.36.03%E2%80%AFAM.png)
-### 6️⃣ Edit Web App
+### 11 Edit Web App
 - Updated `index.jsp` with:
   ```html
   <html>
@@ -98,6 +98,7 @@ mvn archetype:generate \
 
 Screenshots of the setup and steps are stored in the [`/screenshots`](https://github.com/singhharsh77/aws-webapp-devops/tree/main/Screenshorts) folder:
 
+- ✅ Created IAM User and User Group
 - ✅ EC2 instance running  
 - ✅ SSH connection  
 - ✅ Maven `BUILD SUCCESS`  
@@ -109,6 +110,7 @@ Screenshots of the setup and steps are stored in the [`/screenshots`](https://gi
 
 ## 🧹 Cleanup
 - Terminated EC2 instance to avoid extra charges.
+- Delete All the Users and User Group.
 
 ---
 
