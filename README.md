@@ -71,12 +71,12 @@ mvn archetype:generate \
   ```txt
   Host ec2-3-6-94-23.ap-south-1.compute.amazonaws.com
     HostName ec2-3-6-94-23.ap-south-1.compute.amazonaws.com
-    IdentityFile ~/Desktop/DevOps/nextwork-keypair.pem
+    IdentityFile ~/Desktop/DevOps/work-keypair.pem
     User ec2-user
   ```
 - Opened project in VS Code:
   ```
-  /home/ec2-user/nextwork-web-project
+  /home/ec2-user/work-web-project
   ```
 
 ### 10 Updated index.jsp
