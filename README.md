@@ -13,8 +13,8 @@ The goal was to set up a **CI/CD-ready environment** in the cloud, automate the 
 - Downloaded credentials (.csv) and used this user instead of root for security.
 
 ### 2️⃣ EC2 Instance Launch
-### EC2 Instance Running(![Screenshorts/Screenshot 2025-09-13 at 11.55.10 PM.png](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-13%20at%2011.55.10%E2%80%AFPM.png))
-![EC2 Instance]
+### EC2 Instance Running![Screenshorts/Screenshot 2025-09-13 at 11.55.10 PM.png](https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-13%20at%2011.55.10%E2%80%AFPM.png)
+
 - Region: `ap-south-1 (Mumbai)`
 - Instance Type: `t2.nano`
 - AMI: **Amazon Linux 2023**
@@ -36,6 +36,8 @@ The goal was to set up a **CI/CD-ready environment** in the cloud, automate the 
   echo "export PATH=/opt/apache-maven-3.5.2/bin:$PATH" >> ~/.bashrc
   source ~/.bashrc
   ```
+(https://github.com/singhharsh77/aws-webapp-devops/blob/main/Screenshorts/Screenshot%202025-09-13%20at%2011.54.36%E2%80%AFPM.png)
+
 - Installed **Java 8 (Amazon Corretto)**:
   ```bash
   sudo dnf install -y java-1.8.0-amazon-corretto-devel
