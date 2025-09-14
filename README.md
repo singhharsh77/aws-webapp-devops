@@ -16,14 +16,14 @@ The goal was to set up a **CI/CD-ready environment** in the cloud, automate the 
 - Region: `ap-south-1 (Mumbai)`
 - Instance Type: `t2.nano`
 - AMI: **Amazon Linux 2023**
-- Created a key pair `nextwork-keypair.pem`
+- Created a key pair `work-keypair.pem`
 - Updated permissions:  
   ```bash
-  chmod 400 nextwork-keypair.pem
+  chmod 400 work-keypair.pem
   ```
 - Connected via SSH:
   ```bash
-  ssh -i ~/Desktop/DevOps/nextwork-keypair.pem ec2-user@<public-dns>
+  ssh -i ~/Desktop/DevOps/work-keypair.pem ec2-user@<public-dns>
   ```
 
 ### 3️⃣ Install Dependencies
@@ -71,7 +71,7 @@ mvn archetype:generate \
   <html>
     <body>
       <h2>Hello Harsh!</h2>
-      <p>This is my NextWork web application working!</p>
+      <p>This is my Work web application working! You can Edit this according to your needs</p>
     </body>
   </html>
   ```
